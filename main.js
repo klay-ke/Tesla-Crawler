@@ -49,6 +49,6 @@ request(options, function (error, response) {
   if (error) throw new Error(error);
   console.log(JSON.parse(response.body)[0]);
   if (JSON.parse(response.body)[0].purchasable === false) {
-    sendMail();
+    sendEmail();
   }
 });
