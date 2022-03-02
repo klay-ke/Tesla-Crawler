@@ -1,0 +1,24 @@
+name: Tesla Stock Checker
+author: klay-ke
+description: Tesla Stock
+inputs:
+  sender-email-service:
+    description: Sender email service, e.g gmail.
+    required: true
+  sender-username:
+    description: Sender email address.
+    required: true
+  sender-password:
+    description: Sender email password.
+    required: true
+  sku-id:
+    description: Sku ID, e.g. 1A9JGP.
+    required: false
+  receiver-email:
+    description: Receiver email address.
+branding:
+  color: red
+  icon: bell
+runs:
+  using: node16
+  main: 'main.js'
