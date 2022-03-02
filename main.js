@@ -6,6 +6,8 @@ const nodemailer = require('nodemailer');
 const senderEmailService = core.getInput('sender-email-service');
 const senderUsername = core.getInput('sender-username');
 const senderPassword = core.getInput('sender-password');
+console.log(senderUsername);
+console.log(senderPassword);
 const skuId = core.getInput('sku-id');
 const receiverEmail = core.getInput('receiver-email');
 
