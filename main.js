@@ -9,11 +9,6 @@ const senderPassword = core.getInput('sender-password');
 const skuId = core.getInput('sku-id');
 const receiverEmail = core.getInput('receiver-email');
 
-console.log(senderUsername);
-console.log(senderPassword);
-console.log(skuId);
-console.log(receiverEmail);
-
 const options = {
   'method': 'POST',
   'url': 'https://shop.tesla.com/inventory.json',
